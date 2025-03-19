@@ -5,21 +5,21 @@
 class Simplecli < Formula
   desc "A simple CLI tool to explain automated homebrew deployments"
   homepage "https://github.com/lukekras"
-  version "1.0.8-beta"
+  version "1.0.9-beta"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lukekras/simplecli/releases/download/1.0.8-beta/simplecli_Darwin_x86_64.tar.gz"
-      sha256 "0711dc637b3640a4f2ee5aba852baca83ba0679126468409c6e3fe5987e0fe2a"
+      url "https://github.com/lukekras/simplecli/releases/download/1.0.9-beta/simplecli_Darwin_x86_64.tar.gz"
+      sha256 "bc079bdda34cedf057bdc2f5fb539290c7d827e6b6d309fe0bcd96149c8ef525"
 
       def install
         bin.install "simplecli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lukekras/simplecli/releases/download/1.0.8-beta/simplecli_Darwin_arm64.tar.gz"
-      sha256 "73c0cd7a8986e3f2b625e1506c13d5e918c22f0e866fbaba63c29e314748ffd9"
+      url "https://github.com/lukekras/simplecli/releases/download/1.0.9-beta/simplecli_Darwin_arm64.tar.gz"
+      sha256 "5980a0ccec3ecfdbf67bf7b643bf386fcc74218a49dedbf95f7f4c2acb678b22"
 
       def install
         bin.install "simplecli"
@@ -30,8 +30,8 @@ class Simplecli < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lukekras/simplecli/releases/download/1.0.8-beta/simplecli_Linux_x86_64.tar.gz"
-        sha256 "fa11a76093d5997252fcac18cd3eae83c131723c6aa2107c01c04f97395107b4"
+        url "https://github.com/lukekras/simplecli/releases/download/1.0.9-beta/simplecli_Linux_x86_64.tar.gz"
+        sha256 "a64cc083726989fe045a61d797e682122ac1823ec31b8af67f82ecf763ab1b1a"
 
         def install
           bin.install "simplecli"
@@ -40,8 +40,8 @@ class Simplecli < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/lukekras/simplecli/releases/download/1.0.8-beta/simplecli_Linux_arm64.tar.gz"
-        sha256 "e028c62112113604da87d3eed281f0f3d05ee9f432905bd613e10ddec97a40e6"
+        url "https://github.com/lukekras/simplecli/releases/download/1.0.9-beta/simplecli_Linux_arm64.tar.gz"
+        sha256 "36d50ce66aeabcb78847b3c75affdfb6c661b978d42831e2db1dc2ebe4944c5f"
 
         def install
           bin.install "simplecli"
